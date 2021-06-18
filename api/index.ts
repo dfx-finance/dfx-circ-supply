@@ -26,11 +26,12 @@ const calcCircSupply = async (dfx: Contract): Promise<BigNumber> => {
 };
 
 export default async (req: VercelRequest, res: VercelResponse) => {
-  const provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL);
-  const dfx = new Contract(DFX.address, abi, provider);
+  // const provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL);
+  // const dfx = new Contract(DFX.address, abi, provider);
 
-  const rawCircSupply: BigNumber = await calcCircSupply(dfx);
-  const circSupply = ethers.utils.formatUnits(rawCircSupply, DFX.decimals);
+  // const rawCircSupply: BigNumber = await calcCircSupply(dfx);
+  // const circSupply = ethers.utils.formatUnits(rawCircSupply, DFX.decimals);
+  const circSupply = 12345
 
   res.setHeader("Content-Type", "text/plain");
   res.status(200).send(circSupply.toString());
