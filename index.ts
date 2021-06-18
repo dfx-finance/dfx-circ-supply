@@ -37,6 +37,8 @@ app.get("/", async (req, res) => {
   res.status(200).type("text/plain").send(circSupply.toString());
 });
 
-app.listen(80, async () => {
-  console.log("The application is listening on port 80!");
+app.listen(process.env.PORT || 80, async () => {
+  console.log(
+    `The application is listening on port ${process.env.PORT || 80}!`,
+  );
 });
