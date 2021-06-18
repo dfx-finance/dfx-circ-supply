@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc --outDir ./api",
+    "build": "tsc",
     "start": "node index.js"
   },
   "dependencies": {
