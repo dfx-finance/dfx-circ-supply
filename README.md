@@ -9,5 +9,5 @@ A simple Express API to calculate the DFX token circulating supply.
    ```
    RPC_URL=https://eth-mainnet.alchemyapi.io/v2/API_KEY
    ```
-3. `yarn build` to compile the Typescript
-4. `yarn start` to run the server
+3. Run `vercel dev` to start local server
+4. Inspect `http://localhost:3000/api/` in browser
