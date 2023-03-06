@@ -9,7 +9,8 @@ const DFX = {
 };
 
 const EXCLUDE = [
-  "0xa4fc358455febe425536fd1878be67ffdbdec59a", // sablier vesting funds
+  "0xa4fc358455febe425536fd1878be67ffdbdec59a", // sablier vesting funds v1.0
+  "0xCD18eAa163733Da39c232722cBC4E8940b1D8888", // sablier vesting funds v1.1
   "0x27e843260c71443b4cc8cb6bf226c3f77b9695af", // governance multisig
   "0x26f539a0fe189a7f228d7982bf10bc294fa9070c", // treasury multisig
   "0x86E8C4e7549fBCa7eba1AefBdBc23993F721e5CA", // DFX distributor contract
